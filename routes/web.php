@@ -106,3 +106,4 @@ Route::resource('capacitacionEquipos', App\Http\Controllers\CapacitacionEquipoCo
 Route::resource('capacitacionMarcas', App\Http\Controllers\CapacitacionMarcaController::class);
 Route::resource('capacitacionModelos', App\Http\Controllers\CapacitacionModeloController::class);
 Route::resource('capacitacionClientes', App\Http\Controllers\CapacitacionClienteController::class);
+Route::resource('capacitacionServicios', App\Http\Controllers\CapacitacionServicioController::class);

@@ -1,20 +1,51 @@
 <!-- Marca Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('marca_id', 'Marca Id:') !!}
-    {!! Form::number('marca_id', null, ['class' => 'form-control', 'required']) !!}
+    <div class="form-group col-sm-6">
+
+        {!! Form::label('marca_id', 'Asignar Notario:') !!}
+        {!! Form::select(
+            'marca_id',
+            select(\App\Models\CapacitacionMarca::class, 'nombre'),
+            ['id' => 'marca_id', 'class' => 'form-control', 'style' => 'width: 100%']
+
+        ) !!}
+
+    </div>
 </div>
 
 <!-- Modelo Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('modelo_id', 'Modelo Id:') !!}
-    {!! Form::number('modelo_id', null, ['class' => 'form-control', 'required']) !!}
+    <div class="form-group col-sm-6">
+
+        {!! Form::label('modelo_id', 'modelo:') !!}
+        {!! Form::select(
+            'modelo_id',
+            select(\App\Models\CapacitacionModelo::class, 'nombre'),
+            ['id' => 'modelo_id', 'class' => 'form-control', 'style' => 'width: 100%']
+
+        ) !!}
+
+    </div>
 </div>
+
+
 
 <!-- Tipo Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tipo_id', 'Tipo Id:') !!}
-    {!! Form::number('tipo_id', null, ['class' => 'form-control', 'required']) !!}
-</div>
+    <div class="form-group col-sm-6">
+
+        {!! Form::label('tipo_id', 'tipo:') !!}
+        {!! Form::select(
+            'tipo_id',
+            select(\App\Models\CapacitacionTipo::class, 'nombre'),
+            ['id' => 'tipo_id', 'class' => 'form-control', 'style' => 'width: 100%']
+
+        ) !!}
+
+    </div>
 
 <!-- Numero Serie Field -->
 <div class="form-group col-sm-6">

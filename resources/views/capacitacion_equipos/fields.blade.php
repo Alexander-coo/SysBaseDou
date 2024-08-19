@@ -3,7 +3,7 @@
     {!! Form::label('marca_id', 'Marca Id:') !!}
     <div class="form-group col-sm-6">
 
-        {!! Form::label('marca_id', 'Asignar Notario:') !!}
+        {!! Form::label('marca_id', 'Marca:') !!}
         {!! Form::select(
             'marca_id',
             select(\App\Models\CapacitacionMarca::class, 'nombre'),
@@ -37,7 +37,7 @@
     {!! Form::label('tipo_id', 'Tipo Id:') !!}
     <div class="form-group col-sm-6">
 
-        {!! Form::label('tipo_id', 'tipo:') !!}
+        {!! Form::label('tipo_id', 'Tipo:') !!}
         {!! Form::select(
             'tipo_id',
             select(\App\Models\CapacitacionTipo::class, 'nombre'),

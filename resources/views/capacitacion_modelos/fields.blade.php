@@ -1,7 +1,7 @@
 <!-- Marca Id Field -->
 <div class="form-group col-sm-6">
 
-    {!! Form::label('marca_id', 'Asignar Notario:') !!}
+    {!! Form::label('marca_id', 'Marca:') !!}
     {!! Form::select(
         'marca_id',
         select(\App\Models\Capacitacionmarca::class, 'nombre'),

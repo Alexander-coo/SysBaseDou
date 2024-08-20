@@ -1,26 +1,26 @@
 <!-- Cliente Id Field -->
 <div class="col-sm-12">
     {!! Form::label('cliente_id', 'Cliente Id:') !!}
-    <p>{{ $capacitacionServicio->cliente_id }}</p>
+    <p>{{ $capacitacionServicio->cliente->nombre_completo }}</p>
 
 </div>
 
 <!-- User Id Field -->
 <div class="col-sm-12">
     {!! Form::label('user_id', 'User Id:') !!}
-    <p>{{ $capacitacionServicio->user_id }}</p>
+    <p>{{ $capacitacionServicio->user->name }}</p>
 </div>
 
 <!-- Equipo Id Field -->
 <div class="col-sm-12">
     {!! Form::label('equipo_id', 'Equipo Id:') !!}
-    <p>{{ $capacitacionServicio->equipo_id }}</p>
+    <p>{{ $capacitacionServicio->equipo->texto }}</p>
 </div>
 
 <!-- Estado Id Field -->
 <div class="col-sm-12">
     {!! Form::label('estado_id', 'Estado Id:') !!}
-    <p>{{ $capacitacionServicio->estado_id }}</p>
+    <p>{{ $capacitacionServicio->estado->nombre }}</p>
 </div>
 
 <!-- Precio Field -->

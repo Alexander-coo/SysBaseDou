@@ -115,7 +115,7 @@ class CapacitacionServicioDataTable extends DataTable
     {
         return [
             Column::make('cliente_id')->title('Cliente'),
-            /*Column::make('cliente_id')->data('cliente.nombres')-> title('Cliente'),*/
+            //Column::make('cliente_id')->data('cliente.nombres')-> title('Cliente'),
             Column::make('user_id' )->data('user.name')-> title('User'),
             Column::make('equipo_id')->data('equipo.imei')-> title('Equipo'),
             Column::make('estado_id')->data('estado.nombre')-> title('Estado'),

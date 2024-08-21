@@ -26,13 +26,13 @@
 <!-- Precio Field -->
 <div class="col-sm-12">
     {!! Form::label('precio', 'Precio:') !!}
-    <p>{{ $capacitacionServicio->precio }}</p>
+    <p> {{dvs().'. '.$capacitacionServicio->precio }}</p>
 </div>
 
 <!-- Fecha Recepcion Field -->
 <div class="col-sm-12">
     {!! Form::label('fecha_recepcion', 'Fecha Recepcion:') !!}
-    <p>{{ $capacitacionServicio->fecha_recepcion }}</p>
+    <p>{{ $capacitacionServicio->fecha_recepcion}}</p>
 </div>
 
 <!-- Problema Field -->

@@ -31,8 +31,13 @@ class CapacitacionServicioDataTable extends DataTable
             })
             ->editColumn('cliente_id',function (CapacitacionServicio $capacitacionServicio){
                 return $capacitacionServicio->cliente->nombre_completo;
+            })
+            ->editColumn('precio', function (CapacitacionServicio $capacitacionServicio) {
+
+                return dvs().'. '. nfp($capacitacionServicio->precio,'2','.',',');
 
             })
+
 
             ->rawColumns(['action']);
 
